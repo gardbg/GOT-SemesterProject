@@ -1,0 +1,21 @@
+
+
+https://anapioficeandfire.com/api/characters?name=jon+snow 		= 583
+
+https://anapioficeandfire.com/api/characters?name=sansa+stark 		= 957
+
+https://anapioficeandfire.com/api/characters?name=arya+stark		= 148
+
+https://anapioficeandfire.com/api/characters?name=samwell+tarly		= 954
+
+https://anapioficeandfire.com/api/characters?name=stannis+Baratheon	= 1963
+
+https://anapioficeandfire.com/api/characters?name=Melisandre		= 743
+
+https://anapioficeandfire.com/api/characters?name=robb+stark		= 1880
+
+https://anapioficeandfire.com/api/characters?name=catelyn+stark		= 232
+
+https://anapioficeandfire.com/api/characters?name=eddard+stark		= 339
+
+https://anapioficeandfire.com/api/characters?name=brandon+stark		= 206
