@@ -1,7 +1,19 @@
+body {
+    background: url(https://bit.ly/2inE6E9);
+    color: white;
+}
 
+.jumbotron {
+    background: url(https://live.staticflickr.com/3893/14834104277_54d309b4ca_b.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    
+}
 
-h1 {
-    color: red;
+h1,h2,h3 {
+    color: white;
+    text-align: center;
 }
 
 .col-md-3 {
@@ -11,3 +23,15 @@ h1 {
 .col-md-6 {
     padding: 5px;
 }
+
+.board {
+    border: 2px solid lightgray;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+footer {
+    text-align: center;
+}
+
