@@ -4,10 +4,11 @@ body {
 }
 
 .jumbotron {
-    background: url(https://live.staticflickr.com/3893/14834104277_54d309b4ca_b.jpg);
+    background: url('images/1x/allHouses.png');
     background-position: center;
     background-repeat: no-repeat;
     height: 200px;
+    margin-top: 10px;
     
 }
 
@@ -34,4 +35,5 @@ h1,h2,h3 {
 footer {
     text-align: center;
 }
+
 
