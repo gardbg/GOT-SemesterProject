@@ -1,16 +1,3 @@
-/*function getCard(id){
-
-    fetch("https://anapioficeandfire.com/api/characters/" + id)
-    .then((response=>{
-        return response.json()
-    })
-    .then((charName =>{
-        console.log(charName);
-        
-    })
-  
-}*/
-
 function getCard(name, id){
 
 fetch("https://anapioficeandfire.com/api/characters/" + id)
@@ -35,3 +22,24 @@ fetch("https://anapioficeandfire.com/api/characters/" + id)
 
 }
 
+for(i=1; i<11; i++) {
+    let button = document.getElementById(`champion${i}`);
+    button.onclick = saveCharacter;
+    function saveCharacter(){
+        if ("player1" in sessionStorage) {
+            sessionStorage.setItem("player2", this.getAttribute("data-image"));
+            
+        } else {
+            sessionStorage.setItem("player1", this.getAttribute("data-image"));
+        }
+}
+
+}
+
+
+
+//function saveCharact(name)
+
+//localStorage.setItem("playerOne", name)
+
+//localStorage.getItem('playerOne')
