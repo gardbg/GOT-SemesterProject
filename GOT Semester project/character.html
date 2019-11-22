@@ -8,39 +8,48 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="hover-min.css">
 </head>
 <body>
-    
-
+    <br><br><br>
+    <div class="cointainer">
+            
+            <div data-aos="zoom-in-up" data-aos-duration="2500"><h1>Select your character</h1></div>
+    </div>
+    <br>
+<div class="jumbotron jumbotron-fluid jumboCharacter">
+       
+</div>
 
 
     <div class="container">
-        <h1>Select your character</h1>
+        
     <div class="row">
         
         <div class="col-md-3">
             <h3>Jon Snow</h3>
             <div class="card" id="card" style="width: 18rem;">
-                <img src="images/jon-snow.jpg" class="card-img-top" alt="...">
+                <img src="images/jon-snow-test.jpg" class="card-img-top hvr-pulse" alt="...">
                 <div class="cardBody" id="cardBodyJon"></div>
                 <div class="cardCharacterName" id="cardCharacterNameJon"></div>
                 <div class="cardCulture" id="cardCultureJon"></div>
                 <div class="cardBorn" id="cardBornJon"></div>
                 <button id="characterOne" onclick="getCard('Jon', 583)">Get info</button>
-                <button data-image="images/jon-snow.jpg" id="champion1">Select</button>
+                <button data-image="images/jon-snow-test.jpg" id="champion1">Select &rarr;</button>
               </div>
         </div>
 
         <div class="col-md-3">
             <h3>Sansa Stark</h3>
             <div class="card" id="card" style="width: 18rem;">
-                <img src="images/sansa-stark.jpg" class="card-img-top" alt="...">
+                <img src="images/sansa-stark-test.jpg" class="card-img-top hvr-pulse" alt="...">
                 <div class="cardBody" id="cardBodySansa"></div>
                 <div class="cardCharacterName" id="cardCharacterNameSansa"></div>
                 <div class="cardCulture" id="cardCultureSansa"></div>
                 <div class="cardBorn" id="cardBornSansa"></div>
                 <button id="characterTwo" onclick="getCard('Sansa', 957)">Get info</button>
-                <button data-image="images/jon-snow.jpg" id="champion2">Select</button>
+                <button data-image="images/sansa-stark-test.jpg" id="champion2">Select &rarr;</button>
 
 
               </div>
@@ -49,13 +58,13 @@
         <div class="col-md-3">
             <h3>Arya Stark</h3>
             <div class="card" id="card" style="width: 18rem;">
-                <img src="images/arya-stark.jpg" class="card-img-top" alt="...">
+                <img src="images/arya-test.jpg" class="card-img-top hvr-pulse" alt="...">
                 <div class="cardBody" id="cardBodyArya"></div>
                 <div class="cardCharacterName" id="cardCharacterNameArya"></div>
                 <div class="cardCulture" id="cardCultureArya"></div>
                 <div class="cardBorn" id="cardBornArya"></div>
                 <button id="characterThree" onclick="getCard('Arya', 148)">Get info</button>
-                <button data-image="images/jon-snow.jpg" id="champion3">Select</button>
+                <button data-image="images/arya-test.jpg" id="champion3">Select &rarr;</button>
 
               </div>
         </div>
@@ -64,13 +73,13 @@
                 <h3>Samwell Tarly</h3>
 
             <div class="card" id="card" style="width: 18rem;">
-                <img src="images/samwell-tarly.jpg" class="card-img-top" alt="...">
+                <img src="images/samwell-tarly-test.jpg" class="card-img-top hvr-pulse" alt="...">
                 <div class="cardBody" id="cardBodySamwell"></div>
                 <div class="cardCharacterName" id="cardCharacterNameSamwell"></div>
                 <div class="cardCulture" id="cardCultureSamwell"></div>
                 <div class="cardBorn" id="cardBornSamwell"></div>
                 <button id="characterFour" onclick="getCard('Samwell', 954)">Get info</button>
-                <!--<button id="" onclick="saveCharacter('Samwell')">Select Character</button>-->
+                <button data-image="images/samwell-tarly-test.jpg" id="champion4">Select &rarr;</button>
               </div>
         </div>
 
@@ -88,12 +97,13 @@
             <h3>Stannis Baratheon</h3>
 
         <div class="card" id="card" style="width: 18rem;">
-            <img src="images/stannis.jpg" class="card-img-top" alt="...">
+            <img src="images/stannis-test.jpg" class="card-img-top hvr-pulse" alt="...">
             <div class="cardBody" id="cardBodyStannis"></div>
             <div class="cardCharacterName" id="cardCharacterNameStannis"></div>
             <div class="cardCulture" id="cardCultureStannis"></div>
                 <div class="cardBorn" id="cardBornStannis"></div>
             <button id="characterFive" onclick="getCard('Stannis', 1963)">Get info</button>
+            <button data-image="images/stannis-test.jpg" id="champion5">Select &rarr;</button>
           </div>
     </div>
 
@@ -101,12 +111,13 @@
             <h3>Lady Melisandre</h3>
 
         <div class="card" id="card" style="width: 18rem;">
-            <img src="images/melissandre.jpg" class="card-img-top" alt="...">
+            <img src="images/melissandre-test.jpg" class="card-img-top hvr-pulse" alt="...">
             <div class="cardBody" id="cardBodyMelisandre"></div>
             <div class="cardCharacterName" id="cardCharacterNameMelisandre"></div>
             <div class="cardCulture" id="cardCultureMelisandre"></div>
             <div class="cardBorn" id="cardBornMelisandre"></div>
             <button id="characterSix" onclick="getCard('Melisandre', 743)">Get info</button>
+            <button data-image="images/melissandre-test.jpg" id="champion6">Select &rarr;</button>
 
           </div>
     </div>
@@ -114,24 +125,26 @@
     <div class="col-md-3">
             <h3>Robb Stark</h3>
         <div class="card" id="card" style="width: 18rem;">
-            <img src="images/robb-stark.jpg" class="card-img-top" alt="...">
+            <img src="images/robb-stark-test.jpg" class="card-img-top hvr-pulse" alt="...">
             <div class="cardBody" id="cardBodyRob"></div>
             <div class="cardCharacterName" id="cardCharacterNameRob"></div>
             <div class="cardCulture" id="cardCultureRob"></div>
             <div class="cardBorn" id="cardBornRob"></div>
             <button id="characterSeven" onclick="getCard('Rob', 1880)">Get info</button>
+            <button data-image="images/robb-stark-test.jpg" id="champion7">Select &rarr;</button>
           </div>
     </div>
 
     <div class="col-md-3">
             <h3>Catelyn Stark</h3>
         <div class="card" id="card" style="width: 18rem;">
-            <img src="images/catelyn-stark.jpg" class="card-img-top" alt="...">
+            <img src="images/catelyn-stark-test.jpg" class="card-img-top hvr-pulse" alt="...">
             <div class="cardBody" id="cardBodyCatelynn"></div>
             <div class="cardCharacterName" id="cardCharacterNameCatelynn"></div>
             <div class="cardCulture" id="cardCultureCatelynn"></div>
             <div class="cardBorn" id="cardBornCatelynn"></div>
             <button id="characterEight" onclick="getCard('Catelynn', 232)">Get info</button>
+            <button data-image="images/catelyn-stark-test.jpg" id="champion8">Select &rarr;</button>
           </div>
     </div>
 
@@ -146,24 +159,26 @@
         <div class="col-md-6">
                 <h3>Eddard Stark</h3>
             <div class="card" id="card" style="width: 18rem;">
-                <img src="images/ed-stark.jpg" class="card-img-top" alt="...">
+                <img src="images/ed-stark-test.jpg" class="card-img-top hvr-pulse" alt="...">
                 <div class="cardBody" id="cardBodyNed"></div>
                 <div class="cardCharacterName" id="cardCharacterNameNed"></div>
                 <div class="cardCulture" id="cardCultureNed"></div>
                 <div class="cardBorn" id="cardBornNed"></div>
                 <button id="characterNine" onclick="getCard('Ned', 339)">Get info</button>
+                <button data-image="images/ed-stark-test.jpg" id="champion9">Select &rarr;</button>
               </div>
         </div>
     
         <div class="col-md-6">
                 <h3>Brandon Stark</h3>
             <div class="card" id="card" style="width: 18rem;">
-                <img src="images/brandon-stark.jpg" class="card-img-top" alt="...">
+                <img src="images/brandon-stark-test.jpg" class="card-img-top hvr-pulse" alt="...">
                 <div class="cardBody" id="cardBodyBrand"></div>
                 <div class="cardCharacterName" id="cardCharacterNameBrand"></div>
                 <div class="cardCulture" id="cardCultureBrand"></div>
                 <div class="cardBorn" id="cardBornBrand"></div>
                 <button id="characterTen" onclick="getCard('Brand', 206)">Get info</button>
+                <button data-image="images/brandon-stark-test.jpg" id="champion10">Select &rarr;</button>
     
               </div>
         </div>
@@ -175,7 +190,27 @@
     </div>
 
 
+    <div class="container">
+        <footer>
+                <div class="canvas-wrap">
+                        <canvas id="canvas"></canvas>
+                      </div>
+            <div class="row">
+                <div class="col-md-4">
+                    Lorem Ipsum
+                </div>
 
+                <div class="col-md-4">
+                    Lorem Ipsum
+                </div>
+
+                <div class="col-md-4">
+                    Lorem ipsum
+                </div>
+
+            </div>
+        </footer>
+    </div>
 
 
 
@@ -194,5 +229,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="character.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>
+            AOS.init();
+          </script>
 </body>
 </html>
