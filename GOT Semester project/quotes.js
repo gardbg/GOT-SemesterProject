@@ -1,33 +1,33 @@
 
 const api = "https://got-quotes.herokuapp.com/";
 
-const getQuote = (char) => {
-    let endpoint = `${api}/quotes`;
-    if (char) endpoint += `?char=${char}`;
-    fetch(endpoint)
+const generateQuote = (char) => {
+    let quotesource = `${api}/quotes`;
+    if (char) quotesource += `?char=${char}`;
+    fetch(quotesource)
         .then(response => response.json())
         .then(json => {
-            parseQuote(json.quote);
-            parseCharacter(json.character);
+            theQuote(json.quote);
+            whichCharacter(json.character);
         })
         .catch(err => console.log(err));
 };
 
-const parseQuote = (quote) => {
+const theQuote = (quote) => {
     const quoteElement = document.getElementById('quote');
     quoteElement.innerText = quote;
 };
 
-const parseCharacter = (character = null) => {
+const whichCharacter = (character = null) => {
     const characterElement = document.getElementById('character');
     characterElement.innerText = character;
 };
 
-const quoteButton = document.getElementById('quoter');
-quoteButton.addEventListener('click', getQuote);
+const quoteButton = document.getElementById('btnQuote');
+quoteButton.addEventListener('click', generateQuote);
 
 
 
 
 
-getQuote();
+generateQuote();

@@ -5,7 +5,18 @@ function getCard(id){
   }
 
 
+let playerOne = {
+  tileNumber: 0,
+  icon: "someicon.jpg",
+  isplayersTurn: true
+}
 
+
+let playerTwo = {
+  tileNumber: 0,
+  icon: "someicon.jpg",
+  isplayersTurn: false
+}
 
 
 
@@ -34,6 +45,10 @@ var dice = {
     diceNumber(result);
   };
   
+
+  function movePlayer(){
+
+  }
   
   
 

@@ -4,7 +4,7 @@ document.querySelector(".third").addEventListener("click", function() {
       imageUrl: "images/starkbackground.png",
       imageWidth: 550,
       imageHeight: 225,
-      imageAlt: "Eagle Image",
+      imageAlt: "Stark wolf",
       confirmButtonText: "Lock in",
       confirmButtonColor: "#43464B",
       reverseButtons: true,
