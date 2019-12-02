@@ -1,3 +1,5 @@
+//Fetch character info start
+
 function getCard(name, id){
 
 fetch("https://anapioficeandfire.com/api/characters/" + id)
@@ -5,7 +7,7 @@ fetch("https://anapioficeandfire.com/api/characters/" + id)
 .then((response)=>{
     return response.json();
 })
-
+//create the divs to place fetched content
 .then((data)=>{
     console.log(data);
     let characterInfo = document.getElementById('cardCharacterName' + name);
@@ -21,20 +23,22 @@ fetch("https://anapioficeandfire.com/api/characters/" + id)
 })
 
 }
-
+//loop through the id, to find correct champion, then store selected champions in local storage, (data image from character select)
 for(i=1; i<11; i++) {
     let button = document.getElementById(`champion${i}`);
-    button.onclick = saveCharacter;
-    function saveCharacter(){
-        if ("player1" in sessionStorage) {
-            sessionStorage.setItem("player2", this.getAttribute("data-image"));
-            
+    button.onclick = function() {
+        if ("player1" in localStorage) {
+            localStorage.setItem("player2", this.getAttribute("data-image"));
+            localStorage.setItem("gameReady", true);
+
+            window.location.replace("board.html")
         } else {
-            sessionStorage.setItem("player1", this.getAttribute("data-image"));
+            localStorage.setItem("player1", this.getAttribute("data-image"));
         }
+
+    };
 }
 
-}
 
 
 

@@ -1,0 +1,72 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(https://bit.ly/2inE6E9);
+  font-family: game of thrones;
+}
+
+h1, h2, h3, p {
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+button {
+  padding: 10px;
+  background: url(https://bit.ly/2inE6E9) center center no-repeat;
+  color: white;
+  border: 2px solid lightgrey;
+  cursor: pointer;
+  transition: 0.1s ease all;
+}
+button:hover {
+  opacity: 0.8;
+  background: url("images/starkbackground.png");
+  transition: 0.1s ease all;
+}
+
+.card img:hover {
+  border-radius: 70%;
+}
+
+.quoteSection {
+  color: white;
+  line-height: 1.5;
+  padding: 2px;
+}
+
+.card {
+  background-color: black;
+}
+
+.board {
+  border: 2px solid lightgray;
+  padding: 40px;
+  width: 200px;
+  height: 155px;
+  text-align: center;
+  color: white;
+  transition: 0.1s ease all;
+}
+.board:hover {
+  opacity: 0.8;
+  background: url("images/starkbackground.png");
+  transition: 0.6s ease all;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

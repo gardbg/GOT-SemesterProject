@@ -1,4 +1,3 @@
-
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -8,40 +7,16 @@
 }
 body {
     background: url(https://bit.ly/2inE6E9);
-    
     font-family: game of thrones;
-    
 }
-
-@font-face { font-family: 'game of thrones'; src: url('Game of Thrones.TTF'); } 
-
-.jumboBoard {
-    background: url('images/1x/allHouses.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 230px;
-    margin-top: 10px;
-    
-}
-
-.jumboCharacter {
-    background: url('https://images5.alphacoders.com/403/403408.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 450px;
-    margin-top: 10px;
-}
-
-h3 {
-    font-size: 18px;
-}
-
-
 
 h1,h2,h3,p {
     color: white;
     text-align: center;
+}
+
+h3 {
+    font-size: 18px;
 }
 
 button {
@@ -51,15 +26,20 @@ button {
     border: 2px solid lightgrey;
     cursor: pointer;
     transition: 0.1s ease all;
+
+    &:hover {
+    opacity: 0.8;
+    background: url('images/starkbackground.png');
+    transition: 0.1s ease all;
+    }
     
     
 }
+
 
 .card img:hover {
     border-radius: 70%;
 }
-
-
 
 .quoteSection {
     color: white;
@@ -67,31 +47,9 @@ button {
     padding: 2px;
 }
 
-button:hover {
-    opacity: 0.8;
-    background: url('images/starkbackground.png');
-    transition: 0.1s ease all;
-    
-}
-
-.col-md-3 {
-    
-    padding: 5px;
-}
-
-.col-md-6 {
-    padding: 5px;
-}
-
-.card div {
-    background: url(https://bit.ly/2inE6E9) center center no-repeat;
-    color: white;
-    
-}
 .card {
     background-color: black;
 }
-
 
 .board {
     border: 2px solid lightgray;
@@ -101,26 +59,17 @@ button:hover {
     text-align: center;
     color: white;
     transition: 0.1s ease all;
-    
-}
 
-.board:hover {
+    &:hover {
     opacity: 0.8;
     background: url('images/starkbackground.png');
     transition: 0.6s ease all;
     cursor: pointer;
+    }
+    
 }
-
 
 footer {
     text-align: center;
     color: white;
 }
-
-
-
-
-
-
-
-

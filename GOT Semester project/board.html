@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Board</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
 
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
 </head>
 <body>
    
@@ -25,6 +27,8 @@
     </div>
 
     <div class="container">
+
+
     <div class="row">
         <div class="col-lg-9">
     
@@ -33,48 +37,48 @@
         <br>
 
         <div class="row">
-            <div class="col-md-2 board" id="tile1">1</div>
-            <div class="col-md-2 board" id="tile2">2</div>
-            <div class="col-md-2 board" id="tile3">3</div>
-            <div class="col-md-2 board" id="tile4">4</div>
-            <div class="col-md-2 board" id="tile5">5</div>
-            <div class="col-md-2 board" id="tile6">6</div>
+            <div class="col-md-2 board" id="tile1"><img id="tile1icon1" src="" style="width: 100%;" class=""><img id="tile1icon2" src="" style="width: 100%;" class="">Start</div>
+            <div class="col-md-2 board" id="tile2"><img id="tile2icon1" src="" style="width: 100%;" class=""><img id="tile2icon2" src="" style="width: 100%;" class=""></div>
+            <div class="col-md-2 board" id="tile3"><img id="tile3icon1" src="" style="width: 100%;" class=""><img id="tile3icon2" src="" style="width: 100%;" class=""></div>
+            <div class="col-md-2 board" id="tile4"><img id="tile4icon1" src="" style="width: 100%;" class=""><img id="tile4icon2" src="" style="width: 100%;" class=""></div>
+            <div class="col-md-2 board" id="tile5"><img id="tile5icon1" src="" style="width: 100%;" class=""><img id="tile5icon2" src="" style="width: 100%;" class="">Trap</div>
+            <div class="col-md-2 board" id="tile6"><img id="tile6icon1" src="" style="width: 100%;" class=""><img id="tile6icon2" src="" style="width: 100%;" class=""></div>
         </div>
 
         <div class="row">
-                <div class="col-md-2 board" id="tile7">7</div>
-                <div class="col-md-2 board" id="tile8">8</div>
-                <div class="col-md-2 board" id="tile9">9</div>
-                <div class="col-md-2 board" id="tile10">10</div>
-                <div class="col-md-2 board" id="tile11">11</div>
-                <div class="col-md-2 board" id="tile12">12</div>
+                <div class="col-md-2 board" id="tile7"><img id="tile7icon1" src="" style="width: 100%;" class=""><img id="tile7icon2" src="" style="width: 100%;" class="">Trap</div>
+                <div class="col-md-2 board" id="tile8"><img id="tile8icon1" src="" style="width: 100%;" class=""><img id="tile8icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile9"><img id="tile9icon1" src="" style="width: 100%;" class=""><img id="tile9icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile10"><img id="tile10icon1" src="" style="width: 100%;" class=""><img id="tile10icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile11"><img id="tile11icon1" src="" style="width: 100%;" class=""><img id="tile11icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile12"><img id="tile12icon1" src="" style="width: 100%;" class=""><img id="tile12icon2" src="" style="width: 100%;" class=""></div>
         </div>
 
         <div class="row">
-                <div class="col-md-2 board" id="tile13">13</div>
-                <div class="col-md-2 board" id="tile14">14</div>
-                <div class="col-md-2 board" id="tile15">15</div>
-                <div class="col-md-2 board" id="tile16">16</div>
-                <div class="col-md-2 board" id="tile17">17</div>
-                <div class="col-md-2 board" id="tile18">18</div>
+                <div class="col-md-2 board" id="tile13"><img id="tile13icon1" src="" style="width: 100%;" class=""><img id="tile13icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile14"><img id="tile14icon1" src="" style="width: 100%;" class=""><img id="tile14icon2" src="" style="width: 100%;" class="">Trap</div>
+                <div class="col-md-2 board" id="tile15"><img id="tile15icon1" src="" style="width: 100%;" class=""><img id="tile15icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile16"><img id="tile16icon1" src="" style="width: 100%;" class=""><img id="tile16icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile17"><img id="tile17icon1" src="" style="width: 100%;" class=""><img id="tile17icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile18"><img id="tile18icon1" src="" style="width: 100%;" class=""><img id="tile18icon2" src="" style="width: 100%;" class=""></div>
         </div>
 
         <div class="row">
-                <div class="col-md-2 board" id="tile19">19</div>
-                <div class="col-md-2 board" id="tile20">20</div>
-                <div class="col-md-2 board" id="tile21">21</div>
-                <div class="col-md-2 board" id="tile22">22</div>
-                <div class="col-md-2 board" id="tile23">23</div>
-                <div class="col-md-2 board" id="tile24">24</div>
+                <div class="col-md-2 board" id="tile19"><img id="tile19icon1" src="" style="width: 100%;" class=""><img id="tile19icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile20"><img id="tile20icon1" src="" style="width: 100%;" class=""><img id="tile20icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile21"><img id="tile21icon1" src="" style="width: 100%;" class=""><img id="tile21icon2" src="" style="width: 100%;" class="">Trap</div>
+                <div class="col-md-2 board" id="tile22"><img id="tile22icon1" src="" style="width: 100%;" class=""><img id="tile22icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile23"><img id="tile23icon1" src="" style="width: 100%;" class=""><img id="tile23icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile24"><img id="tile24icon1" src="" style="width: 100%;" class=""><img id="tile24icon2" src="" style="width: 100%;" class=""></div>
         </div>
 
         <div class="row">
-                <div class="col-md-2 board" id="tile25">25</div>
-                <div class="col-md-2 board" id="tile26">26</div>
-                <div class="col-md-2 board" id="tile27">27</div>
-                <div class="col-md-2 board" id="tile28">28</div>
-                <div class="col-md-2 board" id="tile29">29</div>
-                <div class="col-md-2 board" id="tile30">30</div>
+                <div class="col-md-2 board" id="tile25"><img id="tile25icon1" src="" style="width: 100%;" class=""><img id="tile25icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile26"><img id="tile26icon1" src="" style="width: 100%;" class=""><img id="tile26icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile27"><img id="tile27icon1" src="" style="width: 100%;" class=""><img id="tile27icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile28"><img id="tile28icon1" src="" style="width: 100%;" class=""><img id="tile28icon2" src="" style="width: 100%;" class=""></div>
+                <div class="col-md-2 board" id="tile29"><img id="tile29icon1" src="" style="width: 100%;" class=""><img id="tile29icon2" src="" style="width: 100%;" class="">Trap</div>
+                <div class="col-md-2 board" id="tile30"><img id="tile30icon1" src="" style="width: 100%;" class=""><img id="tile30icon2" src="" style="width: 100%;" class="">Finish</div>
         </div>
 
     </div>
@@ -97,7 +101,11 @@
         
             <div>
               <button id="btnQuote" class="btnMain">I need inspiration</button>
-            </div>  
+            </div> 
+            <br><br> 
+            <div>
+                    <button id="btnReset" class="btnMain">Restart game</button>
+                  </div>  
         </div>
 
 </div>
@@ -146,8 +154,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="character.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
     <script src="script.js"></script>
+
+
     <script src="quotes.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
