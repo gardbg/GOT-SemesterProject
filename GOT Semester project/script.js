@@ -91,7 +91,7 @@ function checkForVictory(){
   //victory message
   if(victory != null){``
     swal({
-      title: `${victory} is victorious!`,
+      title: `Congratulations! ${victory} is victorious!`,
       imageUrl: "images/starkbackground.png",
       imageWidth: 550,
       imageHeight: 225,
@@ -100,6 +100,12 @@ function checkForVictory(){
       confirmButtonColor: "#43464B",
       reverseButtons: true,
       background: "#000",
+      className: "victory-message",
+      backdrop: `
+    rgba(0,0,123,0.4)
+    url("images/fireworks2.gif")
+    repeat
+  `
       
     }).then((result) => {
       toMenu();
