@@ -108,7 +108,7 @@ function checkForVictory(){
   `
       
     }).then((result) => {
-      toMenu();
+      toMenu(); //run function
     });
   }
 }
