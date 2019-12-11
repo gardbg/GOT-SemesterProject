@@ -1,5 +1,5 @@
 
-//dictionary. the keys represents the trap tiles, while their values represent the trap destination
+//dictionary. the keys represents the trap tiles, while their values represent the trap destination. first: key - value
 // set traps on which tiles
 let specialTiles = {
   5: 3,
@@ -160,7 +160,7 @@ var dice = {
       player.nextTile = specialTiles[player.nextTile];//update with the traps value
     }
 
-    // only change turns if the player did not roll a 6
+    // only change turns if the player did not roll a 6 (check the value)
     console.log(diceResult)
     if(diceResult != 6){
 
@@ -169,7 +169,7 @@ var dice = {
       playerTwo.isplayersTurn = !playerTwo.isplayersTurn;
     } else {
       swal({
-        title: 'You rolled a 6, roll again!',
+        title: `${playerName} rolled a 6, roll again!`,
         imageUrl: 'images/GOTLogo.png',
         imageWidth: 400,
         imageHeight: 200,
@@ -179,7 +179,7 @@ var dice = {
         timer: 2500,
       })
     }
-    //places the icon on its new tile based on the new value
+    //places the icon on its new tile based on the new value (nextTile)
     placePlayerIcons();
     checkForVictory();
     diceNumber(diceResult);
