@@ -1,4 +1,19 @@
+
+//pop-up modal when entering page
+Swal.fire({
+    imageUrl: 'images/GOTLogo.png',
+    imageWidth: 550,
+    imageHeight: 300,
+    imageAlt: 'A tall image',
+    background: "#000",
+    confirmButtonColor: "#43464B",
+    confirmButtonText: "Play",
+    timer: 1500,
+  })
+
+
 //Fetch character info start
+
 
 function getCard(name, id){
 
