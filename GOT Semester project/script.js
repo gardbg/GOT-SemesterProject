@@ -80,7 +80,7 @@ function placePlayerIcons(){
   playerTwo.currentTile = playerTwo.nextTile;
 
 }
-  //check if a player has reached the end of game
+  //check if a player has reached the end of game, == equal to
 function checkForVictory(){
   victory = null;
   if(playerOne.currentTile == 30){
@@ -90,7 +90,7 @@ function checkForVictory(){
     victory = "Player two"
   }
 
-  //victory message
+  //victory message, != not equal
   if(victory != null){``
     swal({
       title: `Congratulations! ${victory} is victorious!`,
@@ -124,7 +124,7 @@ var dice = {
     }
   }
   
-  //Prints dice roll to the page
+  //Prints dice roll (number) to html element
   
   function diceNumber(number) {
     var diceplacement = document.getElementById('dice-number');

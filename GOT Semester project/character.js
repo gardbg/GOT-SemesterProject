@@ -8,7 +8,7 @@ Swal.fire({
     background: "#000",
     confirmButtonColor: "#43464B",
     confirmButtonText: "Play",
-    timer: 1500,
+    timer: 3500,
   })
 
 

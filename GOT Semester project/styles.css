@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: game of thrones;
+  color: white;
 }
 
 @font-face { font-family: 'game of thrones'; src: url('Game of Thrones.TTF'); } 
